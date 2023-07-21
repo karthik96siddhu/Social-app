@@ -23,6 +23,7 @@ app.get('/api/v1/facebook', (req, res) => {
         follows: 130,
         date: dateFormat.asString('dd-MM-yyyy hh:mm:ss.SSS', new Date())
     }
+    console.log('facebook')
     res.status(200).json(instaSocial)
 })
 app.get('/api/v1/linkedin', (req, res) => {
